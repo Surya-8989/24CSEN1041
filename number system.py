@@ -13,7 +13,7 @@ def convert_to_base(num, base):
     temp = num
     while temp > 0:
         remainder = temp % base
-        digits.append(digits_map[remainder])  # Use digit or letter
+        digits.append(digits_map[remainder])
         temp //= base
 
     digits.reverse()
