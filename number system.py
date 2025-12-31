@@ -1,10 +1,13 @@
 def convert_to_base(num, base):
-    # Characters for digits up to base 36
     digits_map = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     # Handle zero as a special case
     if num == 0:
         return "0"
+
+    # Handle negative numbers
+    is_negative = num < 0
+    num = abs(num)
 
     digits = []
     temp = num
@@ -13,13 +16,17 @@ def convert_to_base(num, base):
         digits.append(digits_map[remainder])  # Use digit or letter
         temp //= base
 
-    # Reverse to get correct order
     digits.reverse()
-    return ''.join(digits)
+    result = ''.join(digits)
+
+    if is_negative:
+        result = "-" + result
+
+    return result
 
 
 # Main program
-num = int(input("Enter a number: "))
+num = int(input("Enter a decimal number: "))
 base = int(input("Enter the base (2–36): "))
 
 if base < 2 or base > 36:
