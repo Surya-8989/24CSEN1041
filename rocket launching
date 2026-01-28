@@ -1,0 +1,27 @@
+import time
+
+# Countdown
+for i in range(10, 0, -1):
+    print("🚀 Launching in", i)
+    time.sleep(1)
+
+print("\n🔥 IGNITION STARTED!\n")
+time.sleep(1)
+
+# Rocket animation
+rocket = [
+    "              🚀",
+    "            🚀",
+    "          🚀",
+    "        🚀",
+    "      🚀",
+    "    🚀",
+    "  🚀",
+    "🚀"
+]
+
+for r in rocket:
+    print(r)
+    time.sleep(0.5)
+
+print("\n🌌 Rocket has entered space!")
