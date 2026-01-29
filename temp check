@@ -1,0 +1,11 @@
+temp = int(input("Enter the temperature in °C: "))
+
+if temp > 30:
+    print("Hot Day")
+elif 20 <= temp <= 30:
+    print("Warm Day")
+else:
+    print("Cold Day")
+sample output:
+temp=35
+Warm day
