@@ -7,5 +7,5 @@ elif 20 <= temp <= 30:
 else:
     print("Cold Day")
 sample output:
-temp=35
+temp=25
 Warm day
