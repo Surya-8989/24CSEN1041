@@ -9,3 +9,6 @@ for num in numbers:
 print("Original list:", numbers)
 print("List without duplicates:", unique_numbers)
 
+output
+original list 1 2 2 3 4 3 5 1 6
+without duplicates 1 2 3 4 5 6
